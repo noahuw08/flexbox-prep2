@@ -1,0 +1,53 @@
+body {
+    background-color: lightgreen;
+}
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;           /* change the direction of flex items to column (vertical) */
+}
+
+.flex {
+    background-color: lightblue;
+    display: block;
+    margin-right: 8px;
+    border: 8px solid brown;
+    padding: 8px;
+    flex: 4;
+}
+
+.name {
+    display: block;
+    background-color: lightcoral;
+    margin-right: 8px;
+    border: 8px solid blue;
+    padding: 32px;
+    flex: 3;
+}
+
+.name > .list {
+    display: flex;
+    list-style-type: none;
+    flex-direction: column;
+}
+
+.list > .program,
+.list > .school {
+    padding: 4px;
+    background-color: lightgrey;
+    border: 8px solid lightseagreen;
+    margin: 16px;
+}
+
+
+.intro {
+    display: block;
+    background-color: coral;
+    border: 10px solid blueviolet;
+    padding: 24px;
+    flex: 4;
+}
+
+
+/* flex is the shorthand CSS property for flex-grow, flex-shrink, and flex-basis */
